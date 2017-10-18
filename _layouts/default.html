@@ -1,0 +1,16 @@
+---
+layout: compress
+---
+
+{% include header.html %}
+  <h1 class="introduction"><span class="blue monospace">Joe Levine</span> - projects</h1>
+
+  <h2>Project posts</h2>
+  {% for post in site.posts %}
+    {% if post.status == "published" %}
+      <h3 class="list__item"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {% endif %}
+  {% endfor %}
+
+
+{% include footer.html %}

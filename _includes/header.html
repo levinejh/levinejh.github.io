@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+
+    {% capture styles %}
+      {% include style.scss %}
+    {% endcapture %}
+    
+    <!-- Convert SCSS to CSS & inline the result -->
+    <style>
+    {{ styles | scssify }}
+    </style>
+  </head>
+  <body>
+    <div class="visible-area">
+    <div class="container">

@@ -1,0 +1,22 @@
+title: Feather
+description: A minimal Jekyll theme
+baseurl: ""
+highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      status: "draft"
+      layout: "post"
+
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+
+sass:
+  style: compressed
+
